@@ -1,0 +1,16 @@
+[r_x06 r_y06 r_yk06] = wczytywanie('wejscie06.dat', 'wyjscie06.dat');
+[r_x07 r_y07 r_yk07] = wczytywanie('wejscie07.dat', 'wyjscie07.dat');
+[r_x08 r_y08 r_yk08] = wczytywanie('wejscie08.dat', 'wyjscie08.dat');
+r_x_cale = [r_x06; r_x07; r_x08];
+r_y_cale = [r_y06; r_y07; r_y08];
+r_yk_cale = [r_yk06; r_yk07; r_yk08];
+ix = naszapermutacja;
+r_xs = r_x_cale(ix,:);
+r_ys = r_y_cale(ix,:);
+r_yks = r_yk_cale(ix,:);
+r_x_tajne = r_xs(3001:3690,:);
+r_y_tajne = r_ys(3001:3690,:);
+r_yk_tajne = r_yks(3001:3690,:);
+r_xs = r_xs(1:3000,:);
+r_ys = r_ys(1:3000,:);
+r_yks = r_yks(1:3000,:);
