@@ -4,6 +4,7 @@
 r_x_cale = [r_x06; r_x07; r_x08];
 r_y_cale = [r_y06; r_y07; r_y08];
 r_yk_cale = [r_yk06; r_yk07; r_yk08];
+naszapermutacja = randperm(size(r_x_cale));
 ix = naszapermutacja;
 r_xs = r_x_cale(ix,:);
 r_ys = r_y_cale(ix,:);
